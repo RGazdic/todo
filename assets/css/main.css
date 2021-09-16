@@ -1,0 +1,193 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+}
+
+body{
+	background: #e3e9ff;
+}
+#wrapper{
+	width: 340px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.row{
+	float: left;
+	width: 100%;
+}
+
+/* HEADER */
+.header{
+	float: left;
+	width: 100%;
+	background: #af7eeb;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	color: white;
+	margin-bottom: 20px;
+	box-shadow: 0px 2px 3px #00000052;
+}
+.header .menu-icon{
+	float: left;
+    padding: 13px 14px;
+    cursor: pointer;
+    background: #9b74cc;
+    font-size: 28px;
+}
+.header .title{
+	float: left;
+    margin-left: 36px;
+    padding: 14px 0px;
+    font-size: 22px;
+    font-family: 'Roboto';
+}
+
+/* MENU */
+.menu{
+	float: left;
+	width: 100%;
+	list-style: none;
+	display: none;
+}
+.menu li{
+	float: left;
+    width: 100%;
+    font-family: roboto;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #986fcc;
+}
+
+/* CONTENT  */
+.todo-list{
+	float: left;
+	width: 100%;
+	background: white;
+	padding: 5px;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 3px #0000000f;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.todo-list li{
+	float: left;
+	width: 100%;
+	padding: 5px;
+	font-family: roboto;
+	color: gray;
+	font-weight: bold;
+	list-style: none;
+	cursor: pointer;
+	text-decoration: none;
+	min-height: 25px;
+}
+.todo-list .options{
+	float: right;
+}
+.todo-list .edit{
+	float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.todo-list .edit textarea{
+	border: 1px solid #c6cde4;
+    border-radius: 3px;
+    padding: 5px 6px;
+    background: #e3e9ff;
+    width: 230px;
+    height: 50px;
+}
+.todo-list .edit button{
+	margin-top: 0;
+	box-shadow: 0px 2px 1px #e4e4e4;
+    color: #848484;
+}
+.todo-list .options{
+
+}
+.todo-list li>span{
+	padding: 3px 8px;
+	border-left: 4px solid transparent;
+	width: 138px;
+    float: left;
+}
+.todo-list li:hover span{
+	border-left-color: #af7eeb;
+}
+
+.todo-list li button{
+	float: right;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 6px 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.todo-list .options button{
+	display: none;
+}
+.todo-list li button:hover{
+	background: #e0e0e0;
+}
+.todo-list li:hover .options button{
+	display: block !important;
+}
+
+.new-task, .add-task{
+	position: absolute;
+    bottom: -20px;
+    left: 89px;
+    padding: 10px 22px;
+    background: #af7eeb;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'roboto';
+    cursor: pointer;
+}
+.new-task:hover, .add-task:hover{
+	background-color:#8d65bd ;
+}
+.add-task{
+	display: none;
+}
+/* Input form to add new todo */
+.add-input{
+	width: 100%;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    background: #f9f9f8;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #969696;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    float: left;
+    display: none;
+}
+
+
+.confirm{
+	position: absolute;
+    right: 8px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    color: gray;
+    font-family: 'Roboto';
+    margin-top: 14px;
+}
+.confirm span{
+	text-decoration: underline;
+	padding-right: 4px;
+}
+
